@@ -30,7 +30,7 @@ const Navbar = () => {
     }
     // TODO: JWT signup for manula signup process
     setUser(JSON.parse(localStorage.getItem("profile")));
-  }, [location, user?.token, logout]);
+  }, [location, user?.token]);
 
   return (
     <AppBar className={classes.appBar} position="static" color="inherit">
